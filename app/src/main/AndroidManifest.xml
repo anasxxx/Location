@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yourname.reservation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:name=".ReservationApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Reservation"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Reservation.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.ClientDashboardActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.AgentDashboardActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.SearchPropertiesActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.ClientDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ClientDashboardActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.PropertyDetailsActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.SearchPropertiesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.SearchPropertiesActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.ReservationActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.PropertyDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.PropertyDetailsActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.AgentDashboardActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.AddPropertyActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.AgentDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.AgentDashboardActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.ManagePropertiesActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.AgentDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.AgentDashboardActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.ReservationsListActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.AgentDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.AgentDashboardActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.ClientReservationsActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.ClientDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ClientDashboardActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.ChatActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.EditPropertyActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ManagePropertiesActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.ChatSelectionActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Réservation</string>
+    
+    <!-- Common -->
+    <string name="error_occurred">Une erreur s\'est produite</string>
+    <string name="loading">Chargement…</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annuler</string>
+    <string name="save">Enregistrer</string>
+    <string name="delete">Supprimer</string>
+    <string name="confirm">Confirmer</string>
+    
+    <!-- Login & Registration -->
+    <string name="login">Connexion</string>
+    <string name="login_required">Veuillez vous connecter</string>
+    <string name="register">S\'inscrire</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="name">Nom</string>
+    <string name="user_type">Type d\'utilisateur</string>
+    <string name="client">Client</string>
+    <string name="agent">Agent</string>
+    <string name="logout">Déconnexion</string>
+    
+    <!-- Dashboard -->
+    <string name="properties">Propriétés</string>
+    <string name="reservations">Réservations</string>
+    <string name="my_reservations">Mes réservations</string>
+    <string name="reservation_requests">Demandes de réservation</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profil</string>
+    <string name="edit_profile">Modifier le profil</string>
+    <string name="add_property">Ajouter une propriété</string>
+    <string name="manage_properties">Gérer les propriétés</string>
+    <string name="view_reservations">Voir les réservations</string>
+    
+    <!-- Property -->
+    <string name="property_details">Détails de la propriété</string>
+    <string name="title">Titre</string>
+    <string name="description">Description</string>
+    <string name="location">Emplacement</string>
+    <string name="price">Prix</string>
+    <string name="type">Type</string>
+    <string name="bedrooms">Chambres</string>
+    <string name="bathrooms">Salles de bain</string>
+    <string name="available">Disponible</string>
+    
+    <!-- Reservation -->
+    <string name="make_reservation">Faire une réservation</string>
+    <string name="visit_date">Date de visite</string>
+    <string name="message">Message</string>
+    <string name="send_request">Envoyer la demande</string>
+    <string name="accept">Accepter</string>
+    <string name="reject">Refuser</string>
+    <string name="status_pending">En attente</string>
+    <string name="status_accepted">Acceptée</string>
+    <string name="status_rejected">Refusée</string>
+    <string name="no_reservations">Aucune réservation</string>
+    <string name="no_accepted_reservations">Aucune réservation acceptée pour le chat</string>
+    <string name="error_loading_data">Erreur lors du chargement des données</string>
+    <string name="error_loading_client">Erreur lors de la récupération des informations du client</string>
+    <string name="error_checking_reservations">Erreur lors de la vérification des réservations</string>
+    <string name="error_updating_status">Erreur lors de la mise à jour du statut</string>
+    <string name="empty_list_title">Aucune réservation</string>
+    <string name="empty_list_message">Vous n\'avez pas encore de réservation</string>
+    <string name="empty_list_content_description">Icône de liste vide</string>
+    
+    <!-- Chat -->
+    <string name="send">Envoyer</string>
+    <string name="type_message">Tapez votre message…</string>
+    <string name="no_messages">Aucun message</string>
+    <string name="error_sending_message">Erreur lors de l\'envoi du message</string>
+    <string name="error_loading_messages">Erreur lors du chargement des messages</string>
+</resources>
